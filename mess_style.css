@@ -1,0 +1,122 @@
+/*#import url('https://fonts.googleapis.com/css?
+family=Poppins:100,200,300,400,500,600,700,800,900');*/
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    background:linear-gradient(45deg,#9f2c6c,#833bff);
+
+
+}
+
+.container{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:100px 50px;
+    padding:100px 50px;
+
+
+}
+
+.container .card{
+    position:relative;
+    width:350px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    height:300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow:0 35px 80px rgba(0,0,0,0.15);
+    transition:0.5s;
+
+
+}
+
+.container .card:hover{
+    height:400px;
+
+}
+
+.container .card .imgbr{
+    position:absolute;
+    width:300px;
+    height:220px;
+    background:#333;
+    top:20px;
+    border-radius:12px;
+    transition:0.5s;
+    overflow:hidden;
+
+}
+
+.container .card:hover .imgbr{
+    top:-100px;
+    scale:0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+
+
+    
+}
+
+.container .card .imgbr img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.container .card .content{
+    position:absolute;
+    top:250px;
+    width:100%;
+    padding:0 30px;
+    text-align:center;
+    height:35px;
+    transition: 0.5s;
+    overflow:hidden;
+    object-fit:cover;
+
+
+
+}
+
+.container .card:hover .content{
+    top:150px;
+    height:250px;
+
+}
+
+
+.container.card .content h1{
+    font-size:1.5em;
+    font-weight:700;
+    color:var(---clr);
+
+
+}
+
+.container.card .content p{
+    colo:#333;
+    font-size:1.05em;
+
+}
+
